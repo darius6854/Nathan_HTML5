@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5/CSS3</title>
+    <style>
+        body {
+            background-color: #e5e4e2;
+            /* สีแพลตินัม */
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a1a1a;
+            /* สีตัวหนังสือเข้มขึ้น */
+            margin: 20px;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #111111;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #0f4c5c;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #247158;
+            margin-bottom: 5px;
+        }
+
+        .code-highlight {
+            background-color: #f4f4f4;
+            border-left: 4px solid #1f7a8c;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: "Courier New", monospace;
+            color: #b30000;
+            /* โค้ดตัวอย่างสีเข้มขึ้น */
+            overflow-x: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        p {
+            color: #1a1a1a;
+            /* ตัวอักษรทั่วไปเข้มขึ้น */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML5/CSS3</h1>
+
+    <h2>วิธีการนำ CSS ไปใช้กับ HTML</h2>
+
+    <div class="section">
+        <h3>1. Inline</h3>
+        <p>เป็นการเขียน CSS เข้าไปในแท็ก HTML โดยใช้ <code>style</code> attribute</p>
+        <p><strong>ข้อดี:</strong> ง่ายและสะดวกในการทำงาน เพราะเขียนลงไปใน Tag ได้เลย</p>
+        <p><strong>ข้อเสีย:</strong> โค้ดไม่เป็นระเบียบ, ดูรก, ทำให้ไฟล์ใหญ่ขึ้น และแก้ไขยากหากใช้หลายจุด</p>
+        <div class="code-highlight">
+            &lt;p style="color:#ffffff"&gt;ตัวหนังสือ&lt;/p&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>2. Internal</h3>
+        <p>เป็นการเขียน CSS ในไฟล์ HTML โดยอยู่ภายในแท็ก <code>&lt;style&gt;</code> ที่อยู่ใน <code>&lt;head&gt;</code>
+        </p>
+        <p><strong>ข้อดี:</strong> เขียนได้ง่าย และควบคุมสไตล์ได้ทั้งหน้าเพจ</p>
+        <p><strong>ข้อเสีย:</strong> ไม่สามารถนำ CSS นี้ไปใช้ซ้ำในหน้าอื่นได้สะดวก</p>
+        <div class="code-highlight">
+            &lt;!DOCTYPE html&gt;<br />
+            &lt;html lang="en"&gt;<br />
+            &lt;head&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;ชื่อเรื่องบทความ&lt;/title&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="อธิบายบทความ"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="keywords" content="คีย์เวิร์ดของบทความ"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;style&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body { background: #f2f2f2; padding: 10px; margin: 10px;
+            }<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p { color: #ff0000; }<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;<br />
+            &lt;/head&gt;<br />
+            &lt;body&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;ส่วนเนื้อหาของบทความ&lt;/p&gt;<br />
+            &lt;/body&gt;<br />
+            &lt;/html&gt;
+        </div>
+    </div>
+
+</body>
+
+</html>

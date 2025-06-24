@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Colors - Named + RGB + HEX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1,
+    h2 {
+      color: #333;
+    }
+
+    .color-section {
+      margin-bottom: 40px;
+    }
+
+    .color-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .color-box {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border-radius: 4px;
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .light-text {
+      color: #000;
+      text-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="border: dashed steelblue;">HTML Colors</h1>
+  <p>HTML colors can be specified using color names, RGB, or HEX values. Each format gives the same visual result but uses different syntax.</p>
+
+  <!-- Color Name Section -->
+  <div class="color-section">
+    <h2>🎨 Color Names</h2>
+    <p>In HTML, a color can be specified by using its predefined name:</p>
+    <div class="color-container">
+      <div class="color-box" style="background-color: tomato;">Tomato</div>
+      <div class="color-box light-text" style="background-color: orange;">Orange</div>
+      <div class="color-box" style="background-color: dodgerblue;">DodgerBlue</div>
+      <div class="color-box" style="background-color: mediumseagreen;">MediumSeaGreen</div>
+      <div class="color-box light-text" style="background-color: gray;">Gray</div>
+      <div class="color-box" style="background-color: slateblue;">SlateBlue</div>
+      <div class="color-box light-text" style="background-color: violet;">Violet</div>
+      <div class="color-box light-text" style="background-color: lightgray;">LightGray</div>
+    </div>
+  </div>
+
+  <!-- RGB Section -->
+  <div class="color-section">
+    <h2>🧪 RGB Colors</h2>
+    <p>Colors defined using the RGB format:</p>
+    <div class="color-container">
+      <div class="color-box" style="background-color: rgb(255, 99, 71);">Tomato - rgb(255, 99, 71)</div>
+      <div class="color-box light-text" style="background-color: rgb(255, 165, 0);">Orange - rgb(255, 165, 0)</div>
+      <div class="color-box" style="background-color: rgb(30, 144, 255);">DodgerBlue - rgb(30, 144, 255)</div>
+      <div class="color-box" style="background-color: rgb(60, 179, 113);">MediumSeaGreen - rgb(60, 179, 113)</div>
+      <div class="color-box light-text" style="background-color: rgb(128, 128, 128);">Gray - rgb(128, 128, 128)</div>
+      <div class="color-box" style="background-color: rgb(106, 90, 205);">SlateBlue - rgb(106, 90, 205)</div>
+      <div class="color-box light-text" style="background-color: rgb(238, 130, 238);">Violet - rgb(238, 130, 238)</div>
+      <div class="color-box light-text" style="background-color: rgb(211, 211, 211);">LightGray - rgb(211, 211, 211)</div>
+    </div>
+  </div>
+
+  <!-- HEX Section -->
+  <div class="color-section">
+    <h2>🔢 HEX Colors</h2>
+    <p>Colors defined using the HEX format:</p>
+    <div class="color-container">
+      <div class="color-box" style="background-color: #ff6347;">Tomato - #ff6347</div>
+      <div class="color-box light-text" style="background-color: #ffa500;">Orange - #ffa500</div>
+      <div class="color-box" style="background-color: #1e90ff;">DodgerBlue - #1e90ff</div>
+      <div class="color-box" style="background-color: #3cb371;">MediumSeaGreen - #3cb371</div>
+      <div class="color-box light-text" style="background-color: #808080;">Gray - #808080</div>
+      <div class="color-box" style="background-color: #6a5acd;">SlateBlue - #6a5acd</div>
+      <div class="color-box light-text" style="background-color: #ee82ee;">Violet - #ee82ee</div>
+      <div class="color-box light-text" style="background-color: #d3d3d3;">LightGray - #d3d3d3</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background: linear-gradient(to right, #f0f2f5, #ffffff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #0056b3;
+            padding: 12px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
+        }
+
+        article {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        article h2 {
+            color: #003366;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        article p,
+        article ul {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        article ul {
+            padding-left: 20px;
+        }
+
+        article a {
+            color: #0056b3;
+        }
+
+        article a:hover {
+            color: #ff9900;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 0.95em;
+            border-top: 2px solid #ddd;
+        }
+
+        footer a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            article {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
